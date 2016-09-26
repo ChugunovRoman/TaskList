@@ -1,0 +1,73 @@
+body{
+    background-color: #ffffff;
+}
+.CountTask{
+    padding: 10px 0;
+}
+#tasks{
+    background-color: rgb(182, 226, 253);
+    padding: 10px 10px;
+}
+.TaskContainer{
+    padding: 10px 0;
+    text-align: center;
+    background-color: #753df4;
+    box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.62);
+    font-family: sans-serif;
+    margin: 10px 0 0 0;
+    
+}
+.noTasks{
+    border: 4px solid #0ed94d;
+    background-color: #0ed94d;
+    text-align: center;
+    font-size: 18pt;
+}
+.NameOfTask{
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 20px;
+    width: 50%;
+    background-color: #3d6ef4;
+    box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.62);
+    font-family: sans-serif;
+}
+.descriptionBlock{
+    //display: none;
+    font-family: sans-serif;
+    vertical-align: top;
+    margin: 6px 0 0 25%;
+    padding: 1px 6px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.62);
+    width: 50%
+}
+.TaskPart{
+    margin-top: 6px;
+}
+.FinishBtn{
+    margin: 0 0 4px 0;
+    padding: 6px 12px;
+    border: none;
+    background-color: #98b6fc;
+}
+.FinishBtn:hover{
+    margin: 0 0 4px 0;
+    padding: 6px 12px;
+    border: none;
+    background-color: #1c7cff;
+}
+.FinishBtn:active{
+    margin: 0 0 4px 0;
+    padding: 6px 12px;
+    border: none;
+    background-color: #4e47f8
+}
+.none{
+    display: none;
+}
+.Part{
+    display: list-item;
+    text-align: center;
+    vertical-align: middle;
+}
