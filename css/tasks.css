@@ -68,6 +68,10 @@ body{
 }
 .Part{
     display: list-item;
+    list-style:none;
     text-align: center;
     vertical-align: middle;
+}
+.NameOfTask:hover, .FinishBtn:hover{
+    cursor:pointer;
 }
