@@ -3,7 +3,7 @@ const TaskContainer = React.createClass({
     getInitialState: function(){
         return{
             dataList: [],
-        };       
+        };
     },
     componentDidMount: function(){
         // запрашиваем json с сервера
@@ -44,7 +44,7 @@ const TaskContainer = React.createClass({
                 404: function(){
                     //alert("404. Файл не найден.");
                 }
-            } 
+            }
         });
     },
     render: function(){
@@ -57,14 +57,14 @@ const TaskContainer = React.createClass({
                         <TaskPart data={item} onClick={self.changeHandler} />
                     </div>
                 );
-            });  		
+            });
         }
         else {
             return(
                 <div className="noTasks">
                     <p>Задачи отсутствуют</p>
                 </div>
-            );    		
+            );
         }
         return(
             <div className="CountTask">
@@ -76,7 +76,7 @@ const TaskContainer = React.createClass({
                     <strong className={'taskCount' + (this.state.dataList.length > 0 ? '' : ' none')} >Task count: {this.state.dataList.length}</strong>
                 </div>
             </div>
-        );    	
+        );
     }
 });
 
@@ -105,7 +105,7 @@ const TaskPart = React.createClass({
         if (typeof this.props.onClick === 'function') {
             this.setState({visible: true});
             this.props.onClick(e.target.value);
-        }        
+        }
     },
     render: function(){
         return(

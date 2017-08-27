@@ -1,0 +1,77 @@
+body
+    background-color: #ffffff
+    padding: 0
+    margin: 0
+    outline: none
+    border: 0
+    font-family: monospace
+
+.app
+    width: 500px
+    margin: 10px auto
+    padding: 10px
+    -webkit-box-shadow: 0px 0px 10px 1px rgb(221, 221, 221)
+            box-shadow: 0px 0px 10px 1px rgb(221, 221, 221)
+    background: rgb(221, 221, 221)
+
+.task
+    display: inline-block
+    width: 100%
+    text-align: center
+    background: rgba(17, 224, 31, 0.81)
+    border-radius: 3px
+    margin: 10px 0
+    &_completed
+        background: rgb(182, 181, 181)
+
+.task_completed .desc
+    background: rgb(196, 189, 189)
+
+.task__name
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    &:hover
+        cursor: pointer
+
+.desc
+    max-height: 0px
+    margin: 0px
+    padding: 0px 0 0 0
+    overflow: hidden
+
+.task__desc
+    background: rgba(84, 251, 95, 1)
+    will-change: max-height
+    transition: max-height .5s
+    -webkit-transition: max-height .5s
+
+.link
+    color: rgb(8, 125, 176)
+
+.link_active
+    color: rgb(1, 38, 42)
+    text-decoration: none
+    &:hover
+        cursor: default
+
+.btn
+    background: rgb(250, 248, 19)
+    border: 0
+    padding: 6px 20px
+    margin: 0 0 10px 0
+    color: rgb(18, 18, 18)
+    -webkit-box-shadow: 1px 1px 4px 0 rgba(220, 231, 20, 0.71)
+    box-shadow: 1px 1px 4px 0 rgba(220, 231, 20, 0.71)
+    &:disabled
+        background: rgba(250, 248, 19, 0.48)
+        &:hover
+            cursor: default
+    &:hover
+        cursor: pointer
+    &:active
+        outline: 0
+        border: 0
+        -webkit-box-shadow: 0
+                box-shadow: 0

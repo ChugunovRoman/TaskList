@@ -1,4 +1,4 @@
-# Test task. Use JS+React
+# Test task on NodeJS, React
 
 Description of task:
 

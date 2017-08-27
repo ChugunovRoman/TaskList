@@ -1,0 +1,54 @@
+{
+  "name": "TaskList",
+  "version": "1.0.0",
+  "description": "No description yet",
+  "main": "index.js",
+  "scripts": {
+    "test": "supervisor index.js",
+    "watch": "watchify src/main.js -t babelify -o public/js/bundle.js --debug --verbose"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "express": "^4.15.4",
+    "react": "*",
+    "react-dom": "*",
+    "react-redux": "^5.0.5",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "*",
+    "babel-preset-react": "*",
+    "babelify": "*",
+    "enzyme": "^2.9.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^4.3.11",
+    "react-addons-test-utils": "^15.6.0",
+    "watchify": "*"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ],
+    "minified": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChugunovRoman/TaskList.git"
+  },
+  "keywords": [
+    "React",
+    "NodeJS",
+    "gulp"
+  ],
+  "author": "ChugunovRoman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChugunovRoman/TaskList/issues"
+  },
+  "homepage": "https://github.com/ChugunovRoman/TaskList#readme"
+}
