@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "supervisor index.js",
+    "start": "node index.js",
     "watch": "watchify src/main.js -t babelify -o public/js/bundle.js --debug --verbose"
   },
   "dependencies": {
