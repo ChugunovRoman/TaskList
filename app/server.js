@@ -1,13 +1,14 @@
-'use strict';
+'use strict'
 
 module.exports = function(app, express) {
 
 	const config = require('./config');
 	const path = require('path');
 
-	app.use(express.static(path.join(config.app.viewPath))); // Где лежат view'хи
+	// указываем express'у где у нас лежать view'хи
+	app.use(express.static(path.join(config.app.viewPath)));
 
-	// Старт серва
+	// Стартуем серв
 	app.listen(
 		config.server.port,
 		config.server.host,

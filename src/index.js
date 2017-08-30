@@ -8,8 +8,10 @@ import thunk from 'redux-thunk'
 
 import reducers from './reducers';
 
+// Главный компонент
 import App from './components/App';
 
+// Создаем стор
 const store = createStore(
     reducers,
     applyMiddleware(thunk)

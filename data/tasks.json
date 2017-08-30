@@ -29,7 +29,8 @@
   {
     "id": 5,
     "name": "Логика сервера",
-    "description": "Через REST-API отдаем json-файл с тасками. Принимаем id таски и в файле помечаем 'complete: true'. Бэк на Node.js"
+    "description": "Через REST-API отдаем json-файл с тасками. Принимаем id таски и в файле помечаем 'complete: true'. Бэк на Node.js",
+    "completed": true
   },
   {
     "id": 6,

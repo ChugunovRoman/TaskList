@@ -70,6 +70,7 @@ module.exports = function(app) {
 		);
 	});
 
+	// на остальные запросы выкидываем 404
 	app.all('*', (req, res) => {
 		res.format({
 			'text/plain': () => res.status(404).send('Page not found')

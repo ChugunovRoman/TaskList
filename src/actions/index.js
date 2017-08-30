@@ -4,16 +4,19 @@ import axios from 'axios';
 
 import config from '../../app/config';
 
+// Кидаем, когда получим таски
 const receiveTasks = tasks => ({
     type: 'RECEIVE_TASKS',
     tasks
 });
 
+// Когда завершим таск
 const completeTask = id => ({
     type: 'COMPLITE_TASK',
     id
 });
 
+// Ассинхронный экшен на получение задач
 export function getTasks() {
     return function(dispatch) {
         return axios.post(`http://${config.server.host}:${config.server.port}/get/tasks`)
@@ -24,6 +27,7 @@ export function getTasks() {
     }
 }
 
+// Ассинхронный экшен на завершение задачи
 export function requestCompleteTask(id) {
     return function(dispatch) {
         return axios.post(`http://${config.server.host}:${config.server.port}/del/task/${id}`)
@@ -34,6 +38,7 @@ export function requestCompleteTask(id) {
     }
 }
 
+// Фильтрация
 export const setVisibilityFilter = (filter) => ({
     type: 'SET_VISIBILITY_FILTER',
     filter

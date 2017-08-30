@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "supervisor index.js",
-    "start": "node index.js",
-    "watch": "watchify src/main.js -t babelify -o public/js/bundle.js --debug --verbose"
+    "start0ld": "node index.js",
+    "start": "react-scripts start",
+    "runtest": "react-scripts test",
+    "watch": "watchify src/index.js -t babelify -o public/js/bundle.js --debug --verbose"
   },
   "dependencies": {
     "axios": "^0.16.2",
@@ -28,6 +30,7 @@
     "gulp-sass": "^3.1.0",
     "gulp-watch": "^4.3.11",
     "react-addons-test-utils": "^15.6.0",
+    "react-scripts": "^1.0.12",
     "watchify": "*"
   },
   "babel": {

@@ -1,6 +1,6 @@
 # Test task on NodeJS, React
 
-Description of task:
+## Description of task:
 
 "Необходимо разработать одностраничное приложение с использованием React,  другие библиотеки по желанию.
 

@@ -3,6 +3,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+// Разворачивает описание задачи при клике по заголовку
 const onShowDescription = (el) => {
     let desc = el.nextSibling,
         descHeight = 40;

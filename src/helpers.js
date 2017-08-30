@@ -1,3 +1,5 @@
+// Функции-помошники
+
 export const getVisibleTask = (tasks, filter) => {
     switch (filter) {
         case 'SHOW_ALL':
