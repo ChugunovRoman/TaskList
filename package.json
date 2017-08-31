@@ -4,10 +4,10 @@
   "description": "No description yet",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "build": "webpack",
     "test": "supervisor index.js",
-    "start0ld": "node index.js",
-    "start": "react-scripts start",
-    "runtest": "react-scripts test",
+    "tests": "jest",
     "watch": "watchify src/index.js -t babelify -o public/js/bundle.js --debug --verbose"
   },
   "dependencies": {
@@ -20,6 +20,7 @@
     "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
+    "babel-loader": "^7.1.2",
     "babel-preset-es2015": "*",
     "babel-preset-react": "*",
     "babelify": "*",
@@ -31,7 +32,9 @@
     "gulp-watch": "^4.3.11",
     "react-addons-test-utils": "^15.6.0",
     "react-scripts": "^1.0.12",
-    "watchify": "*"
+    "source-map-loader": "^0.2.1",
+    "watchify": "*",
+    "webpack": "^3.5.5"
   },
   "babel": {
     "presets": [

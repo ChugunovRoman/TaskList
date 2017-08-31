@@ -17,7 +17,7 @@ const store = createStore(
     applyMiddleware(thunk)
 );
 
-render(
+render (
     <Provider store={store}>
         <App />
     </Provider>,
