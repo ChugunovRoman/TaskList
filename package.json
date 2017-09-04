@@ -5,10 +5,36 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "start:watch": "supervisor index.js",
     "build": "webpack",
-    "test": "supervisor index.js",
-    "tests": "jest",
-    "watch": "watchify src/index.js -t babelify -o public/js/bundle.js --debug --verbose"
+    "build:watch": "webpack --watch",
+    "test:jest": "jest",
+    "test:jest:watch": "jest --watch",
+    "test:mocha": "mocha -w test/browser.js test/**/*.spec.js",
+    "test:mocha2": "mocha --compilers js:babel-core/register --require ./test/browser.js --recursive ./test/**/*.spec.js",
+    "test:coverage": "jest --coverage",
+    "babel:watch": "watchify src/index.js -t babelify -o public/js/bundle.js --debug --verbose"
+  },
+  "jest": {
+    "setupFiles": [
+      "./test/jestsetup.js"
+    ],
+    "verbose": true,
+    "snapshotSerializers": [
+      "<rootDir>/node_modules/enzyme-to-json/serializer"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.(css|sass)&": "identity-obj-proxy"
+    },
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ]
   },
   "dependencies": {
     "axios": "^0.16.2",
@@ -23,23 +49,35 @@
     "babel-loader": "^7.1.2",
     "babel-preset-es2015": "*",
     "babel-preset-react": "*",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
     "babelify": "*",
+    "chai": "^4.1.2",
     "enzyme": "^2.9.1",
+    "enzyme-to-json": "^1.5.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-minify-css": "^1.2.4",
     "gulp-sass": "^3.1.0",
     "gulp-watch": "^4.3.11",
-    "react-addons-test-utils": "^15.6.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jsdom": "^11.2.0",
+    "mocha": "^3.5.0",
+    "react-addons-test-utils": "^15.4.2",
     "react-scripts": "^1.0.12",
+    "react-test-renderer": "^15.6.1",
+    "sinon": "^3.2.1",
     "source-map-loader": "^0.2.1",
     "watchify": "*",
-    "webpack": "^3.5.5"
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1"
   },
   "babel": {
     "presets": [
       "es2015",
-      "react"
+      "react",
+      "stage-0",
+      "stage-3"
     ],
     "minified": true
   },

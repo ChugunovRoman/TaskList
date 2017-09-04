@@ -1,0 +1,184 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components: <TaskList /> should renders without crashing 1`] = `
+<TaskList
+  onComplete={[Function]}
+  tasks={
+    Array [
+      Object {
+        "description": "Description 1",
+        "id": "0",
+        "name": "Task 1",
+      },
+      Object {
+        "completed": true,
+        "description": "Description 2",
+        "id": "1",
+        "name": "Task 2",
+      },
+      Object {
+        "completed": true,
+        "description": "Description 3",
+        "id": "2",
+        "name": "Task 3",
+      },
+      Object {
+        "description": "Description 4",
+        "id": "3",
+        "name": "Task 4",
+      },
+    ]
+  }
+>
+  <div
+    className="app__tasks tasks"
+  >
+    <Task
+      description="Description 1"
+      id="0"
+      name="Task 1"
+      onComplete={[Function]}
+    >
+      <div
+        className="task"
+      >
+        <div
+          className="task__name"
+          onClick={[Function]}
+        >
+          <p>
+            Task 1
+          </p>
+        </div>
+        <div
+          className="task__desc desc"
+        >
+          <p
+            className="desc__text"
+          >
+            Description 1
+          </p>
+          <button
+            className="desc__btn btn"
+            disabled=""
+            onClick={[Function]}
+            value="0"
+          >
+            Завершить
+          </button>
+        </div>
+      </div>
+    </Task>
+    <Task
+      completed={true}
+      description="Description 2"
+      id="1"
+      name="Task 2"
+      onComplete={[Function]}
+    >
+      <div
+        className="task task_completed"
+      >
+        <div
+          className="task__name"
+          onClick={[Function]}
+        >
+          <p>
+            Task 2
+          </p>
+        </div>
+        <div
+          className="task__desc desc"
+        >
+          <p
+            className="desc__text"
+          >
+            Description 2
+          </p>
+          <button
+            className="desc__btn btn"
+            disabled="disabled"
+            onClick={[Function]}
+            value="1"
+          >
+            Завершить
+          </button>
+        </div>
+      </div>
+    </Task>
+    <Task
+      completed={true}
+      description="Description 3"
+      id="2"
+      name="Task 3"
+      onComplete={[Function]}
+    >
+      <div
+        className="task task_completed"
+      >
+        <div
+          className="task__name"
+          onClick={[Function]}
+        >
+          <p>
+            Task 3
+          </p>
+        </div>
+        <div
+          className="task__desc desc"
+        >
+          <p
+            className="desc__text"
+          >
+            Description 3
+          </p>
+          <button
+            className="desc__btn btn"
+            disabled="disabled"
+            onClick={[Function]}
+            value="2"
+          >
+            Завершить
+          </button>
+        </div>
+      </div>
+    </Task>
+    <Task
+      description="Description 4"
+      id="3"
+      name="Task 4"
+      onComplete={[Function]}
+    >
+      <div
+        className="task"
+      >
+        <div
+          className="task__name"
+          onClick={[Function]}
+        >
+          <p>
+            Task 4
+          </p>
+        </div>
+        <div
+          className="task__desc desc"
+        >
+          <p
+            className="desc__text"
+          >
+            Description 4
+          </p>
+          <button
+            className="desc__btn btn"
+            disabled=""
+            onClick={[Function]}
+            value="3"
+          >
+            Завершить
+          </button>
+        </div>
+      </div>
+    </Task>
+  </div>
+</TaskList>
+`;

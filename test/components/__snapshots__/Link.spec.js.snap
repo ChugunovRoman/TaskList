@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components: <Link /> calls onClick() on click 1`] = `
+<Link
+  active={false}
+  onClick={[Function]}
+>
+  <a
+    className="link"
+    href="#"
+    onClick={[Function]}
+  >
+    active
+  </a>
+</Link>
+`;
+
+exports[`Components: <Link /> calls onClick() on click 2`] = `
+<Link
+  active={false}
+  onClick={[Function]}
+>
+  <a
+    className="link"
+    href="#"
+    onClick={[Function]}
+  >
+    active
+  </a>
+</Link>
+`;
+
+exports[`Components: <Link /> renders active link 1`] = `
+<Link
+  active={true}
+  onClick={[Function]}
+>
+  <a
+    className="link link_active"
+    href="#"
+    onClick={[Function]}
+  >
+    active
+  </a>
+</Link>
+`;
+
+exports[`Components: <Link /> renders without crashing 1`] = `
+<Link
+  active={false}
+  onClick={[Function]}
+>
+  <a
+    className="link"
+    href="#"
+    onClick={[Function]}
+  >
+    active
+  </a>
+</Link>
+`;

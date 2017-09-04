@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components: <Task /> should parse props with mount 1`] = `
+<Task
+  description="description of task"
+  id="0"
+  name="Name"
+  onComplete={[Function]}
+>
+  <div
+    className="task"
+  >
+    <div
+      className="task__name"
+      onClick={[Function]}
+    >
+      <p>
+        Name
+      </p>
+    </div>
+    <div
+      className="task__desc desc"
+    >
+      <p
+        className="desc__text"
+      >
+        description of task
+      </p>
+      <button
+        className="desc__btn btn"
+        disabled=""
+        onClick={[Function]}
+        value="0"
+      >
+        Завершить
+      </button>
+    </div>
+  </div>
+</Task>
+`;
+
+exports[`Components: <Task /> should parse props with mount 2`] = `
+<Task
+  description="description of task"
+  id="0"
+  name="Name"
+  onComplete={[Function]}
+>
+  <div
+    className="task"
+  >
+    <div
+      className="task__name"
+      onClick={[Function]}
+    >
+      <p>
+        Name
+      </p>
+    </div>
+    <div
+      className="task__desc desc"
+    >
+      <p
+        className="desc__text"
+      >
+        description of task
+      </p>
+      <button
+        className="desc__btn btn"
+        disabled=""
+        onClick={[Function]}
+        value="0"
+      >
+        Завершить
+      </button>
+    </div>
+  </div>
+</Task>
+`;
