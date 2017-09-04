@@ -44,8 +44,14 @@ describe('Components: <Link />', () => {
         expect(wrapper).toMatchSnapshot();
 
         wrapper.find('a').simulate('click', { preventDefault });
+        // не уверен, что здесть правильно так тестировать
+        // изменение стейта после экшена.
+        wrapper.setProps({ active: true });
+        expect(wrapper.find('.link').hasClass('link_active')).toEqual(true);
         expect(props.onClick).toBeCalled();
         expect(preventDefault).toBeCalled();
+
+        expect(wrapper).toMatchSnapshot();
     });
 
 });

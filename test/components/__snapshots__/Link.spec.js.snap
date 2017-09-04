@@ -17,11 +17,11 @@ exports[`Components: <Link /> calls onClick() on click 1`] = `
 
 exports[`Components: <Link /> calls onClick() on click 2`] = `
 <Link
-  active={false}
+  active={true}
   onClick={[Function]}
 >
   <a
-    className="link"
+    className="link link_active"
     href="#"
     onClick={[Function]}
   >
